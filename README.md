@@ -1,12 +1,12 @@
 # Memory Cards
 
-Memory Cards App made with Pure JS, CSS and HTML. [Demo](https://katepysova.github.io/Memory-Cards/).
+New Year Countdown. [Demo](https://katepysova.github.io/New-Year-Countdown/).
 
 ## Installation
 
 1. Clone this repo or downloand zip:
 
-   `git@github.com:katepysova/Memory-Cards.git`
+   `git@github.com:katepysova/New-Year-Countdown.git`
 
 2. Change your current directory to this project directory.
 
