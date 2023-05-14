@@ -42,6 +42,13 @@ body {
   filter: blur(7px) saturate(1.5);
 }
 
+.heading {
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 48px;
+  font-weight: 500;
+}
+
 .container {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 32px;
@@ -55,21 +62,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 16px;
 }
 
 .time {
+  flex-basis: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
+  border: 1.5px solid var(--color-white);
+  border-radius: 8px;
+  padding: 16px;
 }
 
 .time h2 {
-  font-size: 72px;
-  line-height: 80px;
+  font-size: 64px;
+  line-height: 76px;
   font-weight: 500;
 }
 
@@ -116,5 +128,43 @@ body {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 400;
+  }
+
+  .time h2 {
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .heading {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+
+  .time {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  .time h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .countdown {
+    gap: 8px;
   }
 }

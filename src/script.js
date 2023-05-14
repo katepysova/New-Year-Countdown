@@ -55,4 +55,4 @@ const createSnow = (num) => {
 };
 
 setInterval(update, 1000);
-createSnow(130);
+createSnow(88);
