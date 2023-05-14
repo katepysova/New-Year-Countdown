@@ -7,6 +7,9 @@ const currentYear = new Date().getFullYear();
 const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`);
 
 const snowContainer = document.querySelector(".snow-container");
+const countdown = document.querySelector(".countdown");
+
+const loader = document.querySelector(".loader-container");
 
 const snowContent = ["&#10052", "&#10053", "&#10054"];
 const snowColors = ["#ffffff", "#ecfffd", "#a0e6ec", "#94f2f4"];
@@ -53,6 +56,13 @@ const createSnow = (num) => {
     snowContainer.append(snowFlake);
   }
 };
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    countdown.classList.remove("hidden");
+    loader.classList.add("hidden");
+  }, 1000);
+});
 
 setInterval(update, 1000);
 createSnow(88);

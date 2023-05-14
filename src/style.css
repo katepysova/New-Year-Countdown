@@ -56,6 +56,7 @@ body {
   border-radius: 16px;
   width: 100%;
   max-width: 800px;
+  min-height: 325px;
 }
 
 .countdown {
@@ -113,6 +114,44 @@ body {
   }
 }
 
+.hidden {
+  display: none;
+}
+
+.loader-container {
+  text-align: center;
+}
+
+.loader {
+  display: inline-block;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(168, 4, 18);
+  border-bottom: 16px solid rgb(42, 42, 176);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes sway {
   0% {
     transform: translateX(0);
@@ -149,7 +188,6 @@ body {
   .heading {
     font-size: 32px;
     line-height: 44px;
-    margin-bottom: 24px;
   }
 
   .time {
@@ -160,6 +198,14 @@ body {
   .time h2 {
     font-size: 32px;
     line-height: 44px;
+  }
+
+  .loader {
+    border-width: 8px;
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    width: 60px;
+    height: 60px;
   }
 }
 
