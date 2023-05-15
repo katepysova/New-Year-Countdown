@@ -1,4 +1,4 @@
-# Memory Cards
+# New Year Countdown
 
 New Year Countdown. [Demo](https://katepysova.github.io/New-Year-Countdown/).
 
